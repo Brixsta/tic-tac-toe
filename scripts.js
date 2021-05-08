@@ -18,7 +18,7 @@ function createGrid () {
 
 
         $gridSquare.click(function(event){
-
+ 
             // alert user if grid square is already active
             if($gridSquare.hasClass('active')){
                 alert('Invalid mouse click!');
@@ -74,8 +74,12 @@ function createGrid () {
                 $gameResult.appendTo('body');
                 $gameResult.text('X wins!');
                 $('.gridSquare').addClass('active');
+            } else if (arrayOfGridSquares[6].textContent === 'X' && arrayOfGridSquares[7].textContent === 'X'
+            && arrayOfGridSquares[8].textContent === 'X') {
+                $gameResult.appendTo('body');
+                $gameResult.text('X wins!');
+                $('.gridSquare').addClass('active');
             }
-
             // Conditions for O to win
             else if(arrayOfGridSquares[0].textContent === 'O' && arrayOfGridSquares[1].textContent === 'O'
             && arrayOfGridSquares[2].textContent === 'O') {
@@ -109,6 +113,11 @@ function createGrid () {
                 $('.gridSquare').addClass('active');
             } else if (arrayOfGridSquares[3].textContent === 'O' && arrayOfGridSquares[4].textContent === 'O'
             && arrayOfGridSquares[5].textContent === 'O') {
+                $gameResult.appendTo('body');
+                $gameResult.text('O wins!');
+                $('.gridSquare').addClass('active');
+            } else if (arrayOfGridSquares[6].textContent === 'O' && arrayOfGridSquares[7].textContent === 'O'
+            && arrayOfGridSquares[8].textContent === 'O') {
                 $gameResult.appendTo('body');
                 $gameResult.text('O wins!');
                 $('.gridSquare').addClass('active');

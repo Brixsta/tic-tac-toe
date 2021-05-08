@@ -1,5 +1,6 @@
 body {
     font-family: 'Itim', cursive;
+    background-color:rgb(172, 218, 255);
 }
 
 .title {
@@ -27,7 +28,6 @@ body {
 .container {
     height:450px;
     width:450px;
-    background-color:gray;
     display:flex;
     flex-wrap:wrap;
     margin:auto;
