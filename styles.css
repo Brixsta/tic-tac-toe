@@ -1,0 +1,87 @@
+body {
+    font-family: 'Itim', cursive;
+}
+
+.title {
+    font-size:60px;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    color:blue;
+}
+
+.gameResult {
+    text-align:center;
+    font-size:50px;
+    margin:0px;
+    margin-top:15px;
+    color:blue;
+}
+
+.disabled {
+    background-color:blue;
+    font-size:100px;
+}
+
+
+.container {
+    height:450px;
+    width:450px;
+    background-color:gray;
+    display:flex;
+    flex-wrap:wrap;
+    margin:auto;
+}
+
+.gridSquare {
+    height:150px;
+    width:150px;
+    background-color:white;
+    box-sizing:border-box;
+    border:2px solid black;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.playBtn {
+    margin:0px;
+    padding:0px;
+    margin:auto;
+    display:block;
+    padding:20px 80px;
+    cursor:pointer;
+    border-radius:15px;
+    border:0px;
+    background-color:rgb(197, 215, 249);
+    border:solid 5px rgb(38, 38, 188);
+    color:blue;
+    font-family: 'Itim', cursive;
+    font-size:30px;
+    margin-top:20px;
+}
+
+.playBtn:active {
+    transform:scale(.98);
+}
+
+.playBtn:focus {
+    outline:0;
+}
+
+.X, .O {
+    font-size:100px;
+}
+
+.X {
+    color:red;
+}
+
+.O {
+    color:green;
+}
+
+.gridSquare:hover {
+    background-color:aliceblue;
+}
